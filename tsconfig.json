@@ -26,7 +26,11 @@
     "strict": true,
     "jsx": "react-jsx",
     "strictPropertyInitialization": false,
-    "useDefineForClassFields": false
+    "useDefineForClassFields": true,
+    "paths": {
+      "~modules/*": ["./modules/*"],
+      "~lib/*": ["./lib/*"]
+    }
   },
   "include": ["src/**/*", "database/**/*.js"],
   "exclude": ["node_modules", "**/*.spec.ts"]
